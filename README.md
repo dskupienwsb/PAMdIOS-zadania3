@@ -1,50 +1,45 @@
-# Welcome to your Expo app 👋
+# React Native REST API App (Expo Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Opis projektu
 
-## Get started
+Aplikacja mobilna napisana w React Native z użyciem Expo Router. Aplikacja komunikuje się z publicznym REST API i realizuje operacje pobierania oraz wysyłania danych.
 
-1. Install dependencies
+## Funkcjonalności
 
-   ```bash
-   npm install
-   ```
+### Część A – pobieranie danych (GET)
+- Pobieranie listy postów z API:
+  https://jsonplaceholder.typicode.com/posts
+- Wyświetlanie danych w formie listy
+- Każdy post zawiera:
+  - id
+  - title
+  - body
+- Obsługa stanu ładowania
+- Obsługa błędów połączenia
 
-2. Start the app
+### Część B – wysyłanie danych (POST)
+- Formularz dodawania nowego posta
+- Pola:
+  - title
+  - body
+  - userId
+- Wysyłanie danych do API:
+  https://jsonplaceholder.typicode.com/posts
+- Wyświetlanie odpowiedzi serwera
+- Czyszczenie formularza po wysłaniu
+- Walidacja pól formularza
 
-   ```bash
-   npx expo start
-   ```
+## Nawigacja
 
-In the output, you'll find options to open the app in a
+Aplikacja wykorzystuje Expo Router i zakładki:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Zadanie A – lista postów
+- Zadanie B – formularz dodawania posta
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Technologie
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Fetch API
