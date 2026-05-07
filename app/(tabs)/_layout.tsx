@@ -1,30 +1,30 @@
-import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: '#4F8CFF',
+        tabBarActiveTintColor: "#4F8CFF",
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Zadanie 1',
+          title: "Zadanie A",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="home" size={size} color={color} />
+            <Ionicons name="list" size={size} color={color} />
           ),
         }}
       />
 
       <Tabs.Screen
-        name="profile"
+        name="create"
         options={{
-          title: 'Zadanie 2',
+          title: "Zadanie B",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person" size={size} color={color} />
+            <Ionicons name="add-circle" size={size} color={color} />
           ),
         }}
       />
